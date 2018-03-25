@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "988164765317",
+    "firebase_url": "https://know-thy-eating.firebaseio.com",
+    "project_id": "know-thy-eating",
+    "storage_bucket": "know-thy-eating.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988164765317:android:4fd3ec69c3f5fdee",
+        "android_client_info": {
+          "package_name": "com.KnowThyEating.hackitall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988164765317-c7p299srbtlp0qec9qumih2liho40l1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKPkXpvnZg0yYdWG1LIIlb1A_xpVW0ZI4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

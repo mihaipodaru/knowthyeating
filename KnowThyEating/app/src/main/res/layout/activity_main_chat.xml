@@ -1,0 +1,253 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.KnowThyEating.hackitall.MainChatActivity">
+
+
+    <ImageButton
+        android:id="@+id/btnNewDish"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:alpha="12"
+        android:background="#98ffffff"
+        android:text="Create new dish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnThrown"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#98ffffff"
+        android:text="Add food in bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEat" />
+
+    <ImageButton
+        android:id="@+id/btnAddFood"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#98ffffff"
+        android:text="Eat food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewDish" />
+
+    <ImageButton
+        android:id="@+id/btnEat"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#98ffffff"
+        android:text="Thrown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddFood" />
+
+    <ImageButton
+        android:id="@+id/btnViewStats"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#98ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnThrown"
+        app:layout_constraintVertical_bias="0.568" />
+
+    <ImageButton
+        android:id="@+id/btnSignOut"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="12"
+        android:background="#FF0000"
+        android:text="SIGN OUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewRanking" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEat"
+        app:layout_constraintStart_toStartOf="@+id/btnEat"
+        app:layout_constraintTop_toTopOf="@+id/btnEat"
+        app:srcCompat="@drawable/restaurant" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="66dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNewDish"
+        app:layout_constraintStart_toStartOf="@+id/btnNewDish"
+        app:layout_constraintTop_toTopOf="@+id/btnNewDish"
+        app:srcCompat="@drawable/cooking" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddFood"
+        app:layout_constraintStart_toStartOf="@+id/btnAddFood"
+        app:layout_constraintTop_toTopOf="@+id/btnAddFood"
+        app:layout_constraintVertical_bias="0.882"
+        app:srcCompat="@drawable/fridge" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThrown"
+        app:layout_constraintStart_toStartOf="@+id/btnThrown"
+        app:layout_constraintTop_toTopOf="@+id/btnThrown"
+        app:srcCompat="@drawable/trash" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnViewStats"
+        app:layout_constraintStart_toStartOf="@+id/btnViewStats"
+        app:layout_constraintTop_toTopOf="@+id/btnViewStats"
+        app:srcCompat="@drawable/rank" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="New Dish"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNewDish"
+        app:layout_constraintEnd_toEndOf="@+id/btnNewDish"
+        app:layout_constraintStart_toStartOf="@+id/btnNewDish"
+        app:layout_constraintTop_toTopOf="@+id/btnNewDish" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Add Food"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddFood"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddFood"
+        app:layout_constraintStart_toStartOf="@+id/btnAddFood"
+        app:layout_constraintTop_toTopOf="@+id/btnAddFood" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Eat Food"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEat"
+        app:layout_constraintEnd_toEndOf="@+id/btnEat"
+        app:layout_constraintStart_toStartOf="@+id/btnEat"
+        app:layout_constraintTop_toTopOf="@+id/btnEat" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Throw Food"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnThrown"
+        app:layout_constraintEnd_toEndOf="@+id/btnThrown"
+        app:layout_constraintStart_toStartOf="@+id/btnThrown"
+        app:layout_constraintTop_toTopOf="@+id/btnThrown" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="See Stats"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnViewStats"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewStats"
+        app:layout_constraintStart_toStartOf="@+id/btnViewStats"
+        app:layout_constraintTop_toTopOf="@+id/btnViewStats" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SIGN OUT"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSignOut"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignOut"
+        app:layout_constraintStart_toStartOf="@+id/btnSignOut"
+        app:layout_constraintTop_toTopOf="@+id/btnSignOut" />
+
+</android.support.constraint.ConstraintLayout>

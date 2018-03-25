@@ -1,1 +1,1 @@
-knowthyeating
+Know Thy Eating dezvoltata pentru HackItAll.
